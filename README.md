@@ -27,11 +27,17 @@ Paste the contents of your clipboard and give your key an appropriate name.
 ## Step 2: Create a Droplet Running Arch Linux Using the DigitalOcean Web Console  
 1.**Create Droplet:**  
 On the DigitalOcean homepage, click the big green Create button and select Droplet from the drop-down list.  
+
 2.**Choose Region:** Select the region closest to you for a better connection.  
+
 3.**Get Arch Linux Image:** Download your Arch Linux image from here.  
+
 4.**Add Custom Image:**  
 Click on the Custom Images button and upload your Arch Linux image.
 Choose the basic size for your image.  
+
 5.**Pick CPU Option:** Select a CPU option that fits your needs. For this tutorial, I am choosing the AMD premium option for $7.  
+
 6.**Choose SSH Key:** Select SSH KEY for your authentication method and choose your key.  
+
 7.**Set Hostname:** Change your hostname to something appropriate.
