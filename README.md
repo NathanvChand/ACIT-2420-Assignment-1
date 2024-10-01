@@ -8,7 +8,7 @@ ACIT 2420 Lvl 2 Assignment 1
   -How to use a cloud-init configuration file to automate initial setup tasks  
   -How to connect your SSH keys to your server 
 
-##Step 1:Create SSH keys on your local machine.  
+## Step 1:Create SSH keys on your local machine.  
 
 1. **Open Terminal:** Open your computer terminal on whatever operating system you have, for example, Windows PowerShell. For this tutorial, I will be using a Windows operating system.
 
