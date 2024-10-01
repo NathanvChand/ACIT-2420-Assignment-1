@@ -81,3 +81,14 @@ Scroll down to the Advanced Options drop-down tab.
 
 Click Add Initialization scripts (free) and paste the content from your cloud-init.yaml file into the user data section.  
 
+## Step 4: Connect to Your Server Using Your SSH Keys  
+1. **Get Droplet IP Address:**  
+Go to the Droplets tab on the left side of DigitalOcean and select your droplet.
+
+Copy its IP address.  
+
+2. **SSH into Your Droplet:**
+   
+```ssh (-i “your file here”) Username@(Your I.P. here)```  
+
+Finally, you’ve finished the tutorial!
