@@ -24,7 +24,7 @@ Navigate to the Settings tab on DigitalOcean.
 Go to the Security tab and click on ADD SSH KEY.
 Paste the contents of your clipboard and give your key an appropriate name.
 
-## Step 2: Create a Droplet Running Arch Linux Using the DigitalOcean Web Console  
+## Step 2: Create a Droplet Running Arch Linux Using the DigitalOcean Web Console and Adding a Custom Arch Linux Image  
 1.**Create Droplet:**  
 On the DigitalOcean homepage, click the big green Create button and select Droplet from the drop-down list.  
 
@@ -44,5 +44,40 @@ Choose the basic size for your image.
 7.**Set Hostname:** Change your hostname to something appropriate.  
 
 ## Step 3: Use a Cloud-Init Configuration File to Automate Initial Setup Tasks  
+1.**Install Cloud-Init:** you'll need to install cloud-init onto your machine. You can do this by using this code:  
 
+```sudo pacman -S cloud-init```
+
+2.**Create Cloud-Init Configuration File:**  
+Open a plain text editor and input your configuration. Save it as cloud-init.yaml. Your file should look similar to this:  
+
+```
+#cloud-config
+
+# Create new user
+users:
+  - name: newuser
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAr...your-public-key... user@host
+
+
+# Install initial packages
+packages:
+  - git  
+  - vim  
+
+# Disable root access using SSH  
+ssh_pwauth: false  
+disable_root: true
+```
+
+3.**Add Initialization Script:**
+Go back to your DigitalOcean droplet setup.  
+
+Scroll down to the Advanced Options drop-down tab.  
+
+Click Add Initialization scripts (free) and paste the content from your cloud-init.yaml file into the user data section.  
 
