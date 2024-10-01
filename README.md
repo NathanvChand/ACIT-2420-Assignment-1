@@ -12,12 +12,12 @@ ACIT 2420 Lvl 2 Assignment 1
 
 1. **Open Terminal:** Open your computer terminal on whatever operating system you have, for example, Windows PowerShell. For this tutorial, I will be using a Windows operating system.
 
-2. **Generate SSH Key Pair:** To make a new SSH key pair, type in this command:
+2. **Generate SSH Key Pair:** To make a new SSH key pair, type in this command:  
   ```ssh-keygen -t ed25519 (You can save your key to a specified file here using: “-f C:\Users\User_name\.ssh\do-key”) -C "youremail@email.com"```
 
 3. **Add SSH Key to DigitalOcean:**
 Log into your DigitalOcean account.
-Copy your SSH key to the clipboard using this command:
+Copy your SSH key to the clipboard using this command:  
 ```Get-Content (your file data here) | Set-Clipboard```
 
 Navigate to the Settings tab on DigitalOcean.
