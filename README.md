@@ -91,4 +91,15 @@ Copy its IP address.
    
 ```ssh (-i “your file here”) Username@(Your I.P. here)```  
 
-Finally, you’ve finished the tutorial!
+Finally, you’ve finished the tutorial!  
+
+## Sources  
+
+https://docs.digitalocean.com/products/droplets/how-to/automate-setup-with-cloud-init/  
+https://docs.digitalocean.com/products/app-platform/how-to/deploy-from-container-images/  
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-to-digitalocean-app-platform  
+https://www.howtogeek.com/devops/how-to-deploy-your-own-container-to-digitaloceans-app-platform/  
+https://docs.digitalocean.com/products/kubernetes/getting-started/deploy-image-to-cluster/  
+https://docs.digitalocean.com/products/droplets/how-to/provide-user-data/  
+https://www.digitalocean.com/blog/automating-application-deployments-with-user-data  
+
