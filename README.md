@@ -31,6 +31,7 @@ On the DigitalOcean homepage, click the big green Create button and select Dropl
 2.**Choose Region:** Select the region closest to you for a better connection.  
 
 3.**Get Arch Linux Image:** Download your Arch Linux image from here.  
+https://gitlab.archlinux.org/archlinux/arch-boxes/-/packages/
 
 4.**Add Custom Image:**  
 Click on the Custom Images button and upload your Arch Linux image.
@@ -40,4 +41,8 @@ Choose the basic size for your image.
 
 6.**Choose SSH Key:** Select SSH KEY for your authentication method and choose your key.  
 
-7.**Set Hostname:** Change your hostname to something appropriate.
+7.**Set Hostname:** Change your hostname to something appropriate.  
+
+## Step 3: Use a Cloud-Init Configuration File to Automate Initial Setup Tasks  
+
+
